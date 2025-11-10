@@ -3,13 +3,13 @@ const products = [
     {
         id: 1,
         name: "Relógio Roléx masculino ",
-        price: 790,
+        price: 1.790,
         image: "image/relogio masculino.webp"
     },
     {
         id: 2,
         name: "Relógio feminino com jade ",
-        price: 960,
+        price: 1.960,
         image: "image/relogio feminino com jade.avif"
     },
     {
@@ -45,7 +45,7 @@ const products = [
     {
         id: 7,
         name: "Brinco de topázio",
-        price: 890,
+        price: 1.890,
         image: "image/birnco de topazio.webp"
     },
     {
@@ -105,7 +105,7 @@ function renderProducts() {
             <img src="${product.image}" alt="${product.name}" class="product-image">
             <div class="product-info">
                 <h3 class="product-title">${product.name}</h3>
-                <p class="product-price">R$ ${product.price.toFixed(2)}</p>
+                <p class="product-price">R$ ${product.price.toFixed(3)}</p>
                 <button class="add-to-cart" data-id="${product.id}">Adicionar ao Carrinho</button>
             </div>
         `;
