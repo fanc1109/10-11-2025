@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Vault</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    
+    <header>
+        <div class="header-container">
+            <div class="logo">The<span>Vault</span></div>
+            <nav>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#products">Produtos</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li class="cart-icon" id="cart-icon">
+                        Carrinho
+                        <span class="cart-count" id="cart-count">0</span>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Banner principal -->
+    <section class="hero">
+        <h1>Algumas histórias não estão nos livros.<br>
+            Algumas peças não estão nas vitrines.
+            <br>Elas aguardam.</h1>
+        <p> The Vault<br>
+            Where Legacy Awaits</p>
+        <a href="#products" class="btn">Ver Produtos</a>
+    </section>
+
+    <!-- Seção de produtos -->
+    <section class="products" id="products">
+        <h2 class="section-title">Nossos Produtos</h2>
+        <div class="products-grid" id="products-grid">
+            <!-- Os produtos serão inseridos via JavaScript -->
+        </div>
+    </section>
+
+    <!-- Carrinho lateral -->
+    <div class="overlay" id="overlay"></div>
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Seu Carrinho</h3>
+            <button class="close-cart" id="close-cart">&times;</button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Itens do carrinho serão inseridos aqui -->
+        </div>
+        <div class="cart-total">
+            Total: R$ <span id="cart-total">0.00</span>
+        </div>
+        <button class="checkout-btn">Finalizar Compra</button>
+    </div>
+    <section id="sobre" class="products">
+        <h2 class="section-title">Sobre nós</h2>
+        <p>The Vault é mais do que uma loja; é um destino digital exclusivo para conhecedores do extraordinário. Funcionamos como um clube privativo, onde o acesso é concedido àqueles que buscam não apenas produtos, mas peças de legado.
+         <br>
+            Nossa essência é a curadoria implacável. Uma equipa de especialistas seleciona à mão cada item—de relógios de edição única a joias raras—garantindo autenticidade, procedência e um valor que transcende tendências.
+         <br>   
+            Aqui, a experiência de compra é tão exclusiva quanto os nossos produtos. Através de uma plataforma segura e discreta, oferecemos um serviço de conselho pessoal, criando um espaço onde o verdadeiro luxo é revelado de forma personalizada e confidencial.
+            <br>
+            The Vault. O seu cofre digital para o que é verdadeiramente excecional.</p>
+    </section>
+    <section id="contato" class="products">
+        <h2 class="section-title">Contato</h2>
+        <p>Endereço:  nº 178 - New Bond  Street,Mayfair - Londres - Inglaterra, 893232-513
+            Telefone: (47) 98412-6117
+            Horário de funcionamento: 
+             Com horário marcado
+            </p>
+    </section>
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 thevault. Todos os direitos reservados.</p>
+            <div class="footer-links">
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Termos de Serviço</a>
+                <a href="#">Contato</a>
+            </div>
+        </div>
+    </footer>
+<script src="js/scripts.js"></script> 
+
+</body>
+</html>
