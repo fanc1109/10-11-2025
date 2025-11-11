@@ -174,7 +174,7 @@ function updateCart() {
             <img src="${item.image}" alt="${item.name}" class="cart-item-image">
             <div class="cart-item-details">
                 <h4 class="cart-item-title">${item.name}</h4>
-                <p class="cart-item-price">R$ ${item.price.toFixed(2)} x ${item.quantity}</p>
+                <p class="cart-item-price">R$ ${item.price.toFixed(3)} x ${item.quantity}</p>
                 <button class="cart-item-remove" data-id="${item.id}">Remover</button>
             </div>
         `;
@@ -182,7 +182,7 @@ function updateCart() {
     });
     
     // Atualizar total
-    cartTotal.textContent = total.toFixed(2);
+    cartTotal.textContent = total.toFixed(3);
     
     // Adicionar event listeners aos botões de remover
     document.querySelectorAll('.cart-item-remove').forEach(button => {
@@ -202,7 +202,7 @@ function showNotification(message) {
         position: fixed;
         bottom: 20px;
         right: 20px;
-        background-color: #2ecc71;
+        background-color: #b87333;
         color: white;
         padding: 12px 20px;
         border-radius: 4px;
