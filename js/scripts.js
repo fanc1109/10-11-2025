@@ -3,72 +3,84 @@ const products = [
     {
         id: 1,
         name: "Relógio Roléx masculino ",
+        description: "O relógio mais exclusivo do mundo.",
         price: 1.790,
         image: "image/relogio masculino.webp"
     },
     {
         id: 2,
         name: "Relógio feminino com jade ",
+        description: "Relógio de ouro com jade na pulseira. ",
         price: 1.960,
         image: "image/relogio feminino com jade.avif"
     },
     {
         id: 3,
         name: "Colar de Diamante exclusivo",
+        description: "Colar com pendente de diamante branco.",
         price: 26.200,
         image: "image/colar de diamante.webp"
     },
     {
         id: 4,
         name: "Anel de Rubi",
+        description: "Anel de rubi com brilhantes ao redor dele que pertencou a icônica cantora Rihanna.",
         price: 7.590,
         image: "image/anel de rubi.webp"
     },
     {
         id: 5,
         name: "Anel de noivado elegante",
+        description: "Anel de noivado que pertencou a princesa Cecília de Bragansa.",
         price: 5.800,
         image: "image/anel de noivado.webp"
     },
     {
         id: 6,
         name: "Anel de Esmeralda",
+        description: "Anel de ouro com um pequeno rubi que pertenceu a Marilyn Manson.",
         price: 10.990,
         image: "image/anel de esmeralda.webp"
     },
     {
         id: 7,
         name: "Colar de perolas",
+        description: "Colar de diamantes com pendentes de perolas que pertencou a Lady Diana.",
         price: 2.190,
         image: "image/colar de perolas.webp"
     },
     {
         id: 7,
         name: "Brinco de topázio",
+        description: "Brincos de topázio que pertenciam ao tesouro real da Inglaterra.",
         price: 1.890,
         image: "image/birnco de topazio.webp"
     },
     {
         id: 8,
         name: "Brinco de esmeralda",
+        description: "Brincos de esmeralda que pertenciam ao tesouro real da Inglaterra.",
         price: 5.350,
         image: "image/brinco de esmeralda.webp"
     },
     {
         id: 9,
         name: "Brinco de sáfira e brilhantes",
+        description: "Brincos de sáfira rosa em forma de flor do design Tiffany & Co.",
         price: 14.830,
         image: "image/brinco de safira e brilhantes.webp"
     },
     {
         id: 10,
         name: "Brinco de flor de esmeralda",
+        description: "Brincos de esmeralda com brilhantes em forma de flor do design Cartier",
         price: 5.054,
         image: "image/brinco de flor de esmeralda.webp"
     },
     {
         id: 11,
         name: "Brinco de Orquídea",
+        description: "Brincos com forma de orquídea com perolas naturais do design de Cartier.",
         price: 8.990,
         image: "image/brinco de orquidea.webp"
     },
@@ -105,6 +117,7 @@ function renderProducts() {
             <img src="${product.image}" alt="${product.name}" class="product-image">
             <div class="product-info">
                 <h3 class="product-title">${product.name}</h3>
+                <p class="product-description"> ${product.description || ''}</p>
                 <p class="product-price">R$ ${product.price.toFixed(3)}</p>
                 <button class="add-to-cart" data-id="${product.id}">Adicionar ao Carrinho</button>
             </div>
